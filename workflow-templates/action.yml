@@ -8,3 +8,4 @@ inputs:
 runs:
   steps:
     - run: echo Hello from $INPUT_USERNAME
+      shell: bash
