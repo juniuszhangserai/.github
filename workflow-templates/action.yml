@@ -6,8 +6,8 @@ inputs:
     required: true
     default: 'Junius'
 runs:
-  - env:
-      INPUT: ${{inputs.username}}
+  env:
+    INPUT: ${{inputs.username}}
   using: "composite"
   steps:
     - uses: actions/checkout@v2
