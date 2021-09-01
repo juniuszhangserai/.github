@@ -8,5 +8,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo Hello with $INPUT_USERNAME
+    - run: echo Hello with ${{inputs.username}}
       shell: bash
