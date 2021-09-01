@@ -8,8 +8,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    env:
-      INPUT: ${{inputs.username}}
     - uses: actions/checkout@v2
     - run: env
       shell: bash
