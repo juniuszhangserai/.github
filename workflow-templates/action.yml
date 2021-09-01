@@ -6,6 +6,7 @@ inputs:
     required: true
     default: 'Junius'
 runs:
+  using: "composite"
   steps:
     - run: echo Hello
       shell: bash
