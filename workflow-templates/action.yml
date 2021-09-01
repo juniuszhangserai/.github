@@ -6,10 +6,10 @@ inputs:
     required: true
     default: 'Junius'
 runs:
+  - env:
+      INPUT: ${{inputs.username}}
   using: "composite"
   steps:
-    - env:
-        INPUT: ${{inputs.username}}
     - uses: actions/checkout@v2
     - run: env
       shell: bash
