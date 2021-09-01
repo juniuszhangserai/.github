@@ -1,8 +1,4 @@
 name: 'Junius Test Action'
 description: 'Junius Test Action'
-inputs:
-  testinput:
-    description: 'test input'
-    default: '1'
 runs:
   echo Hello from ${ INPUT_TESTINPUT }
