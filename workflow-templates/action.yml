@@ -8,5 +8,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo Hello ${{ github.event.inputs.username }}
+    - run: echo Hello with $INPUT_USERNAME
       shell: bash
