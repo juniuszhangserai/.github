@@ -6,11 +6,11 @@ inputs:
     required: true
     default: 'Junius'
 runs:
-  using: actions/checkout@v2
   using: "composite"
   steps:
     - env:
-      - INPUT: ${{inputs.username}}
+        INPUT: ${{inputs.username}}
+    - uses: actions/checkout@v2
     - run: env
       shell: bash
     - run: echo Hello with ${{inputs.username}}
