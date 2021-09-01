@@ -1,4 +1,3 @@
 name: 'Junius Test Action'
 description: 'Junius Test Action'
-runs:
-  echo Hello 
+run: echo Hello from $INPUT_TESTINPUT
