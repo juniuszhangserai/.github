@@ -7,5 +7,6 @@ inputs:
     default: 'Junius'
 runs:
   steps:
+    using: "composite"
     - run: echo Hello from $INPUT_USERNAME
       shell: bash
