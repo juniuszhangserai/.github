@@ -1,3 +1,10 @@
 name: 'Junius Test Action'
 description: 'Junius Test Action'
-run: echo Hello from $INPUT_TESTINPUT
+inputs:
+  username:
+    description: 'username'
+    required: true
+    default: 'Junius'
+runs:
+  steps:
+    - run: echo Hello from $INPUT_USERNAME
