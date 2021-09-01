@@ -1,0 +1,13 @@
+{
+    "name": "junius test workflow action",
+    "description": "junius test workflow action",
+    "iconName": "example-icon",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
