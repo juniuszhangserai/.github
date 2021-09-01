@@ -1,4 +1,4 @@
 name: 'Junius Test Action'
 description: 'Junius Test Action'
 runs:
-  echo Hello from ${ INPUT_TESTINPUT }
+  echo Hello from $INPUT_TESTINPUT
