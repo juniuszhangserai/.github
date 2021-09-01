@@ -6,9 +6,6 @@ inputs:
     required: true
     default: 'Junius'
 runs:
-  using: "composite"
-  env:
-    USERNAME: ${INPUT_USERNAME}
   steps:
-    - run: echo Hello from ${USERNAME}
+    - run: echo Hello from $INPUT_USERNAME
       shell: bash
