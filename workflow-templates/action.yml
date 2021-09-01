@@ -5,4 +5,4 @@ inputs:
     description: 'test input'
     default: '1'
 runs:
-  echo Hello from ${{ github.event.inputs.testinput }}
+  echo Hello from ${ INPUT_TESTINPUT }
