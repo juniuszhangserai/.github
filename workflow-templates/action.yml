@@ -8,6 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - working-directory: ./workflow-templates/
     - uses: actions/checkout@v2
     - run: env
       shell: bash
